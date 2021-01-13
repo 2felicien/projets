@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-6dp"
+        android:layout_marginLeft="-6dp"
+        android:layout_marginTop="-4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="353dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="207dp"
+            android:background="#F0F3F2"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                android:text="CONNEXION"
+                android:textColor="#00897B"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextIdentifiant"
+                android:layout_width="382dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="99dp"
+                android:ems="10"
+                android:hint="Entrez votre identifiant"
+                android:inputType="textPersonName"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/editTextMdp"
+                android:layout_width="388dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="181dp"
+                android:ems="10"
+                android:hint="Entrez votre mot de passe"
+                android:inputType="textPassword"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn_connexion"
+                android:layout_width="388dp"
+                android:layout_height="79dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="255dp"
+                android:background="#00897B"
+                android:text="Valider"
+                android:textColor="#F4EEEE"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:backgroundTint="#00897B" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="231dp"
+            android:layout_height="191dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="105dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="13dp"
+            android:foregroundGravity="center"
+            app:srcCompat="@drawable/capture" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
