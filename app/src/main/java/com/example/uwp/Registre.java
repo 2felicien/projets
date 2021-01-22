@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -108,10 +110,20 @@ public class Registre extends AppCompatActivity {
         for (int i = 0; i < jsonArray.length(); i++) {
             JSONObject obj = jsonArray.getJSONObject(i);
             Tabetudiants[i] = obj.getString("Nom");
+
         }
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, Tabetudiants);
         listView.setAdapter(arrayAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(Registre.this, DetailRegistre.class);
+                intent.putExtra("Promotion", listView.getItemAtPosition(i).toString());
+                startActivity(intent);
+            }
+        });
     }
 
 
@@ -128,19 +140,19 @@ public class Registre extends AppCompatActivity {
         String url = "http://192.168.43.68/uwepo/?p=";
 
         if(PROMOTION_MESSAGE.equals("PREMIER BACHELIER")){
-            //  identier promotion
+            //  identifier promotion
             getJSON(url+"etudiant_bac1");
         }
         else if(PROMOTION_MESSAGE.equals("DEUXIEME BACHELIER")) {
-            //  identier promotion
+            //  identifier promotion
             getJSON(url+"etudiant_bac2");
         }
         else if(PROMOTION_MESSAGE.equals("TROISIEME BACHELIER")){
-            //  identier promotion
+            //  identifier promotion
              getJSON(url+"etudiant_bac3");
         }
         else {
-            //  identier promotion
+            //  identifier promotion
         }
     }
 

@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Apropos">
+    tools:context=".Apropos"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="202dp"
+        app:srcCompat="@drawable/capture" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A propos de uwepo"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/editTex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textSize="20dp"
+        android:text="Uwepo, est une application Android qui permet de gérer la présence des étudiants de la faculté des sciences. • Dans notre application, on suppose que, chaque professeur à son identifiant pour se connecter à l’application. • Et chaque étudiant est inscrit dans la base de donnes de l’UNILU, c’est-à-dire notre application sera en contact avec la base de donnes de l’UNILU." />
+
+
+</LinearLayout>

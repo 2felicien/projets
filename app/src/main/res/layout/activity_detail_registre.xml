@@ -16,7 +16,7 @@
         android:textColor="#444"
         android:backgroundTint="#dededede"
         android:background="#dedede"
-        android:id="@+id/textView"
+        android:id="@+id/textViewNomEtudiant"
         />
 
     <ListView
